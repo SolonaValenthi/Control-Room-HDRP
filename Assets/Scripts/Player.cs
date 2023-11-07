@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 
         Vector3 direction = new Vector3(lrMovement, 0, fbMovement);
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(direction), 0.6f))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(direction), 0.6f, -1, QueryTriggerInteraction.Ignore))
         {
             return;
         }
